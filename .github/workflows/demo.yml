@@ -1,0 +1,11 @@
+name : github-actions-demo
+on : [push]
+
+
+jobs:
+  print-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: uname -a
+      - run: java -version
+
