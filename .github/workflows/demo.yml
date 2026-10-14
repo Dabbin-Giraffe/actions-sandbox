@@ -1,6 +1,6 @@
 name : github-actions-demo
 on : [push]
-
+actions/setup-java@v6
 
 jobs:
   print-demo:
