@@ -1,11 +1,12 @@
 name : github-actions-demo
 on : [push]
-actions/setup-java@v6
+
 
 jobs:
   print-demo:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-java@v6
       - run: uname -a
       - run: java -version
 
