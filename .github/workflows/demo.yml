@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '21'
       - run: uname -a
       - run: java -version
 
